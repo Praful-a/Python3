@@ -82,5 +82,36 @@ Output in Python 3.x
 NameError: name 'xrange' is not defined
 '''
 
-for x in range(1, 5):
-	print(x)
+# for x in range(1, 5):
+# 	print(x)
+"""
+ouput :
+1
+2
+3
+4	"""
+
+
+			#### Error Handling ####
+
+# try:
+#     trying_to_check_error
+# except NameError, err:
+#     print err, 'Error Caused'   # Would not work in Python 3.x
+ 
+''' Output in Python 2.x 
+name 'trying_to_check_error' is not defined Error Caused
+
+Output in Python 3.x :
+File "a.py", line 3
+    except NameError, err:
+                    ^
+SyntaxError: invalid syntax
+'''
+
+## To run above code in python 3.x
+
+# try:
+# 	trying_to_check_error
+# except NameError as err:  # 'as' is need Python 3.x
+# 	print(err, 'Error Caused')
