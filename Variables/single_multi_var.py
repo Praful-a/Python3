@@ -25,6 +25,6 @@
 # print(b)
 
 # swaping wihtout using third var
-a, b = 10, 20
-a, b = b, a
-print(a, b)
+# a, b = 10, 20
+# a, b = b, a
+# print(a, b)
