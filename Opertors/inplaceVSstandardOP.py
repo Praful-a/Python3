@@ -174,15 +174,71 @@ import operator
 # Code to demonstrate the working of itruediv() and imod(), idiv
 
 # using iturediv() to add and assign value
-x = operator.itruediv(10, 2)
+# x = operator.itruediv(10, 2)
 
-# printing the modified value
-print("The value after dividing and assigning : ", end="")
-print(x)
+# # printing the modified value
+# print("The value after dividing and assigning : ", end="")
+# print(x)
 
-# using imod() to concat the sequence
-y = operator.imod(10, 6)
+# # using imod() to concat the sequence
+# y = operator.imod(10, 6)
 
-# using imod() to concat sequences
-print('The string after modulus and assigning : ', end="")
-print(y)
+# # using imod() to concat sequences
+# print('The string after modulus and assigning : ', end="")
+# print(y)
+
+
+"""
+In python a+= b doesn't always behave the same way as a = a+b
+some operands may give the different results under different condition
+"""
+
+# lst1 = [5, 4, 3, 2, 1]
+# lst2 = lst1
+# lst1 += [1, 2, 3, 4]
+
+# print(lst1)
+# print(lst2)
+
+# lst1 = [5, 4, 3, 2, 1]
+# lst2 = lst1
+# lst1 = lst1 + [1, 2, 3, 4]
+
+# # Contents of lst1 are same as above
+# # program, but contents of lst2 are different
+# print(lst1)
+# print(lst2)
+
+# Code to illustrate differenc between == and is 
+# operator [] is an empty list
+
+list1 = []
+list2 = []
+list3 = list1
+
+if (list1 == list2):
+	print("True")
+else:
+	print("False")
+
+if(list1 is list2):
+	print("True")
+else:
+	print("False")
+
+if(list1 is list3):
+	print("True")
+else:
+	print("False")
+
+# because the concatination of two list always
+# produce a new list
+list3 = list3 + list2
+
+if (list1 is list3):
+	print("True")
+else:
+	print("False")
+
+print(id(list1))
+print(id(list2))
