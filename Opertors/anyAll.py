@@ -54,3 +54,4 @@ for i in range(0,20):
   
 print('See whether all numbers in list1 are odd =>')
 print(all(list2))
+
