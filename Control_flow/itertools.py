@@ -233,5 +233,6 @@ import operator
 
 # Working of zip_longest()
 
-print("The combined values of iterables is :")
-print(*(itertools.zip_longest('GesoGes', 'ekfrek', fillvalue='_')))
+# print("The combined values of iterables is :")
+# print(*(itertools.zip_longest('GesoGes', 'ekfrek', fillvalue='_')))
+
