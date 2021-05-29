@@ -102,16 +102,29 @@
 # 	Main()
 
 # A Python program to demonstrate working of Generators
-def Reverse(data):
-	for index in range(len(data)-1, -1, -1):
-		yield data[index]
+# def Reverse(data):
+# 	for index in range(len(data)-1, -1, -1):
+# 		yield data[index]
 
-def Main():
-	rev = Reverse("Harssh")
-	for char in rev:
-		print(char)
-	data = 'Harssh'
-	print(list(data[i] for i in range(len(data)-1, -1, -1)))
+# def Main():
+# 	rev = Reverse("Harssh")
+# 	for char in rev:
+# 		print(char)
+# 	data = 'Harssh'
+# 	print(list(data[i] for i in range(len(data)-1, -1, -1)))
 
-if __name__ == "__main__":
-	Main()
+# if __name__ == "__main__":
+# 	Main()
+
+
+class ThisUse:
+
+	def __init__(self,a, b):
+		ThisUse.a = a
+		ThisUse.b = b
+
+	def display(self):
+		print(ThisUse.a+ThisUse.b);
+
+obj = ThisUse(10,15)
+obj.display()
