@@ -1,24 +1,17 @@
 from collections import Counter
-def sum_of_price(l2, counter):
-	sum = 0
-	c = 0
-	for i in l2:
-
-		sum += i[1]
-	return sum
-
-
-if __name__ == '__main__':
-	n = int(input())
-	sizes = list(map(int, input().strip().split()))
-	c = Counter(sizes)
-	size = int(input())
-	l2 = []
-	for _ in range(size):
-		s = list(map(int, input().strip().split()))
-		l2.append(s)
-	result = sum_of_price(l2, c)
-	print(result)
-	print(sizes)
-	print(l2)
-	
+l = [2, 3, 4, 5, 6, 8, 6, 5, 18]
+counter = Counter(l)
+print(counter)
+c = 0
+s = 0	
+for _ in range(6):
+	n, p = input().split()
+	num = int(n)
+	price = int(p)
+	if num in counter:
+		c += 1
+		if (c != counter[num]):
+			s += price 
+		else:
+			s += 0		 
+print(s)
