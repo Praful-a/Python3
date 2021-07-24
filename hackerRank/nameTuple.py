@@ -1,5 +1,4 @@
 from collections import namedtuple
-Car = namedtuple('Car', 'ID Name')
-xyz = Car(ID=1, Name='Hello')
-xyz = Car(ID=2, Name="Sumit")
+Car = namedtuple('Car', 'ID_Name')
+xyz = Car(Car = [1, 2], ID_Name = [1, 2])
 print(xyz)
